@@ -12,7 +12,7 @@ int main()
 
     inches = (feet * 12);
 
-    cout << feet << " is " << inches << " inches.";
+    cout << feet << " is " << inches << " inches.\n";
     
 
     
