@@ -8,10 +8,10 @@ int main() {
     cout << "Enter your full name: ";
     getline(cin, fullName);
     
-    int spacePos = fullName.find(' ');
-    string firstName = fullName.substr(0, spacePos);
-    string lastName = fullName.substr(spacePos + 1);
-    
+    int space = fullName.find(' ');
+    string firstName = fullName.substr(0, space);
+    string lastName = fullName.substr(space + 1);
+
     cout << "Initials: " << firstName[0] << "." << lastName[0] << "." << endl;
     
     string newFirstName = firstName.substr(0, firstName.length() / 2) + lastName.substr(lastName.length() / 2);
