@@ -2,22 +2,30 @@
 
 using namespace std;
 
-Sum(int num){
-    int sum ;
+int sum(int num){
+    int sum = 0;
     
-    for(int i =1 ; i<num;i++){
+    for(int i = 1; i <= num; i++){
         sum += i;
     }
+
+    cout << "The sum is: " << sum << endl;
+
     return sum;
 }
 
-pro(int num){
-    int pro =1 ;
+int product(int num) {
+    int product = 1;
     
-    for(int i =1 ; i<num;i++){
-        sum = i * sum;
+    for (int i = 1; i <= num; i++) {
+        product *= i;
     }
+
+    cout << "The product is: " << product << endl;
+
+    return product;
 }
+
 
 int main(){
     int num;
@@ -25,15 +33,11 @@ int main(){
     cout << "Enter a positive integer or 0 to quit: ";
     cin >> num;
     
-    if(num>0){
-        cout << "The sum is " << sum(num) << ".";
-        cout <<"The product is " << pro(num) << ".";
+    if(num > 0){
+        sum(num);
+        product(num);
     }
-
-    while(num <0){
-    cout << "Enter a positive integer or 0 to quit: ";
-        cin >> num;
-        cout << "The sum is " << sum(num) << ".";
-        cout <<"The product is " << pro(num) << ".";
+    else if(num == 0){
+        exit(0);
     }
 }
