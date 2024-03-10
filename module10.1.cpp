@@ -19,7 +19,6 @@ int main() {
     cout << "Enter a number: ";
     cin >> num;
 
-    // Calculate factorial using the factorial function
     int result = factorial(num);
 
     cout << "Factorial of " << num << " is: " << result << endl;
